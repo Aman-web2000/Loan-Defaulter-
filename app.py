@@ -25,21 +25,21 @@ def main():
 
     st.header("Enter the Details Below:")
 
-    income=st.number_input("Enter your Income per Year",min_value=100000,max_value=9000000,step=5000)
+    income=st.number_input("Enter your Income per Year",min_value=100000.0,max_value=9000000.0,step=5000.0)
 
     married=st.radio("Martial Status",['married',"single"])
 
-    age=st.slider("Age",min_value=21,max_value=68,step=1)
+    age=st.slider("Age",min_value=21.0,max_value=68.0,step=1.0)
 
     car=st.radio("Do You Own a Car",['yes','no'])
 
-    job_exp=st.number_input("Job Experience",min_value=0,max_value=30,step=2)
+    job_exp=st.number_input("Job Experience",min_value=0.0,max_value=30.0,step=2.0)
 
-    house=st.slider("Current House Years",min_value=0,max_value=40,step=2)
+    house=st.slider("Current House Years",min_value=0.0,max_value=40.0,step=2.0)
 
     l=[income,married,age,car,job_exp,house]
 
-    input_df=pd.DataFrame(data=[[income,age,married,car,house,job_exp]],columns=['Income','Age','Married/Single','Car_Ownership','CURRENT_HOUSE_YRS','Total_Job_Experience'])
+    input_df=pd.DataFrame(data=[[int(income),int(age),married,car,int(house),int(job_exp)]],columns=['Income','Age','Married/Single','Car_Ownership','CURRENT_HOUSE_YRS','Total_Job_Experience'])
 
     if st.button('Predict'):
         val=predict(input_df)
