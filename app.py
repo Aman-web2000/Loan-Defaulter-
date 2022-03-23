@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 from PIL import Image
 
-pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter.pkl",'rb')
+pickle_in=open("LoanDefaulter.pkl",'rb')
 clf=pickle.load(pickle_in)
 
 def predict(l):
