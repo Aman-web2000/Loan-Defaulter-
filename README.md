@@ -4,4 +4,4 @@ Classification Model Which classify whether a Person a will be a Loan defaulter 
 
 Code : https://colab.research.google.com/drive/1wC2QlUChznVd65d3gEszCu45mTZYOIoz?usp=sharing
 
-Web App: https://share.streamlit.io/aman-web2000/loan-defaulter-/main/app.py
+Web App: https://c48jamsmmrqjs2xzg3qs7a.streamlit.app/
