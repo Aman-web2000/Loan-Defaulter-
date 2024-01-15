@@ -16,15 +16,15 @@ def load_model(model_name):
     """Load the Machine Learning Model using pickle file"""
     
     if model_name=='Logistic Regression':
-        pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter_lr.pkl",'rb')
+        pickle_in=open("LoanDefaulter_lr.pkl",'rb')
     elif model_name=='Decision Tree':
-        pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter_dt.pkl",'rb')
+        pickle_in=open("LoanDefaulter_dt.pkl",'rb')
     elif model_name=='Random forest':
-        pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter_rfc.pkl",'rb')
+        pickle_in=open("LoanDefaulter_rfc.pkl",'rb')
     elif model_name=='XGBoost':
-        pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter_xgb.pkl",'rb')
+        pickle_in=open("LoanDefaulter_xgb.pkl",'rb')
     else:
-        pickle_in=open("A:\DS ML\Classification\Loan defaulter\LoanDefaulter_knn.pkl",'rb')
+        pickle_in=open("LoanDefaulter_knn.pkl",'rb')
                
     clf=pickle.load(pickle_in)
     
