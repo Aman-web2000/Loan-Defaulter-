@@ -4,7 +4,6 @@ import numpy as np
 import category_encoders as ce
 import pickle
 from PIL import Image
-from sklearn.tree import DecisionTreeClassifier
 
 st.set_page_config(
     page_title="Classifier",
