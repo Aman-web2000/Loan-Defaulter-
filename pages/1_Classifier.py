@@ -15,13 +15,13 @@ def load_model(model_name):
     
     """Load the Machine Learning Model using pickle file"""
     
-    if model_name=='Logistic Regression':
+    if model_name.lower().split(" ")[0]=='logistic':
         pickle_in=open("LoanDefaulter_lr.pkl",'rb')
-    elif model_name=='Decision Tree':
+    elif model_name.lower().split(" ")[0]=='decision':
         pickle_in=open("LoanDefaulter_dt.pkl",'rb')
-    elif model_name=='Random forest':
+    elif model_name.lower().split(" ")[0]=='random':
         pickle_in=open("LoanDefaulter_rfc.pkl",'rb')
-    elif model_name=='XGBoost':
+    elif model_name.lower().split(" ")[0]=='xgboost':
         pickle_in=open("LoanDefaulter_xgb.pkl",'rb')
     else:
         pickle_in=open("LoanDefaulter_knn.pkl",'rb')
